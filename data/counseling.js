@@ -63,11 +63,11 @@ const counselingData = {
 };
 
 const counselingSources = [
-  {id:"S1",label:"나의 실제 욕구"},
-  {id:"S2",label:"현실적인 생활 필요"},
-  {id:"S3",label:"가족·주변 기대"},
-  {id:"S4",label:"타인과의 비교"},
-  {id:"S5",label:"불안·평가에 대한 부담"},
-  {id:"S6",label:"과거 경험"},
-  {id:"S7",label:"아직 잘 모르겠음"}
+  {id:"S1",label:"내가 정말 원해서",description:"내가 좋아하거나 꼭 하고 싶어서"},
+  {id:"S2",label:"생활에 꼭 필요해서",description:"돈, 출퇴근, 건강, 가족 돌봄 때문에"},
+  {id:"S3",label:"가족이나 주변의 기대 때문에",description:"부모님·친구·선생님의 말이나 기대 때문에"},
+  {id:"S4",label:"다른 사람과 비교해서",description:"친구나 다른 사람보다 뒤처질까 봐"},
+  {id:"S5",label:"걱정되거나 불안해서",description:"실패, 실업, 사람들의 평가가 걱정돼서"},
+  {id:"S6",label:"예전에 겪은 일 때문에",description:"좋았거나 힘들었던 경험 때문에"},
+  {id:"S7",label:"아직 이유를 잘 모르겠어서",description:"이유는 잘 모르지만 왠지 중요하게 느껴져서"}
 ];
