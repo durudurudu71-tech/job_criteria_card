@@ -2,6 +2,7 @@
 const counselingSettings = {
   mustHaveExcessThreshold: 5,
   realityGapThreshold: 3,
+  realityLowMax: 3,
   highImportanceThreshold: 8,
   lowFlexibilityThreshold: 3,
   sourceConcentrationThreshold: 0.5,

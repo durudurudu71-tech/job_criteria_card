@@ -69,5 +69,5 @@ const counselingSources = [
   {id:"S4",label:"다른 사람과 비교해서",description:"친구나 다른 사람보다 뒤처질까 봐"},
   {id:"S5",label:"걱정되거나 불안해서",description:"실패, 실업, 사람들의 평가가 걱정돼서"},
   {id:"S6",label:"예전에 겪은 일 때문에",description:"좋았거나 힘들었던 경험 때문에"},
-  {id:"S7",label:"아직 이유를 잘 모르겠어서",description:"이유는 잘 모르지만 왠지 중요하게 느껴져서"}
+  {id:"S7",label:"이유를 아직 모르겠어서",description:"이유는 모르지만 중요하게 느껴져서"}
 ];
