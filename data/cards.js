@@ -1,5 +1,7 @@
 // V0.6 카드 데이터입니다. 카드 ID는 상담질문과 결과 계산에 연결되어 있습니다.
-const JOB_CARDS = [
+// 전체 60장 중 기본 상담에서는 48장 핵심카드를 사용합니다.
+// 확장카드는 필요할 때 다시 포함할 수 있도록 원문 데이터를 보관합니다.
+const ALL_JOB_CARDS = [
   {id:"A01",category:"업무내용",cardName:"잘하는일",front:"내가 잘하는 일",back:"내가 가진 장점과 능력을 일에서 충분히 써보고 싶습니다."},
   {id:"A02",category:"업무내용",cardName:"좋아하는일",front:"내가 좋아하는 일",back:"관심이 생기고 재미를 느끼며 즐겁게 일을 하고 싶습니다."},
   {id:"A03",category:"업무내용",cardName:"전문성활용",front:"전문성을 살리는 일",back:"내가 배운 지식, 자격, 기술, 경험을 활용할 수 있는 일을 하고 싶습니다."},
@@ -61,3 +63,11 @@ const JOB_CARDS = [
   {id:"F05",category:"회사특성",cardName:"공공기관",front:"공공기관에서 일하고 싶다",back:"국가나 지역 사회를 위해 일하며 안정적이고 공적인 역할을 하는 기관에서 일하고 싶습니다."},
   {id:"F06",category:"회사특성",cardName:"가치가맞는회사",front:"내 생각과 잘 맞는 회사에서 일하고 싶다",back:"회사가 중요하게 생각하는 목표와 가치에 내가 공감할 수 있으면 좋겠습니다."}
 ];
+
+const EXPANSION_CARD_IDS = [
+  "A08", "A11", "A20", "B04", "C06", "D02",
+  "D06", "E03", "E06", "E10", "E11", "F04"
+];
+
+const EXPANSION_CARDS = ALL_JOB_CARDS.filter(card => EXPANSION_CARD_IDS.includes(card.id));
+const JOB_CARDS = ALL_JOB_CARDS.filter(card => !EXPANSION_CARD_IDS.includes(card.id));

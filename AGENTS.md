@@ -7,7 +7,7 @@ This repository is a dependency-free Korean job-criteria card web app.
 - `index.html`: application markup for card sorting, deep exploration, TOP3/TOP5, reality checks, WDEP, and the one-screen final report.
 - `style.css`: desktop-first responsive styling and component states.
 - `app.js`: screen flow, validation, LocalStorage persistence, and result calculation.
-- `data/cards.js`: the 60-card JavaScript dataset consumed by `app.js`.
+- `data/cards.js`: the 60-card source dataset. The app uses a 48-card core deck; 12 expansion cards remain preserved in the file.
 - `data/counseling.js`: two questions and counselor tags for every card, plus the seven shared source types.
 - `data/settings.js`: V0.4 analysis thresholds, source guidance, and card-combination rules.
 - `직업기준카드.md`: authoritative source text for card content. Do not edit it when changing application behavior.
@@ -38,9 +38,9 @@ Use two-space indentation in HTML, CSS, and JavaScript. Prefer plain Vanilla Jav
 
 ## Testing Guidelines
 
-Manual browser testing is required. Verify start-form validation, conditional job input, all 60 cards, automatic advancement, previous-card editing, refresh persistence, progress display, and result counts totaling 60. Also test the five-or-more notice and reset confirmation. Check desktop and a narrow mobile viewport. Confirm the browser console contains no errors.
+Manual browser testing is required. Verify start-form validation, conditional job input, all 48 core cards, automatic advancement, previous-card editing, refresh persistence, progress display, and result counts totaling 48. Also test the five-or-more notice and reset confirmation. Check desktop and a narrow mobile viewport. Confirm the browser console contains no errors.
 
-When editing card data, verify unique IDs and exact counts: A=24, B=6, C=6, D=6, E=12, F=6. Preserve source wording except for the approved B05 override.
+When editing the core deck, verify unique IDs and exact counts: A=21, B=5, C=5, D=4, E=8, F=5 (48 total). Keep the 12 expansion cards and their counseling data preserved for later use. Preserve source wording except for the approved B05 override.
 
 ## Commit & Pull Request Guidelines
 
